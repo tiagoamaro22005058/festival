@@ -16,7 +16,7 @@ def dias_view(request):
 
 
 def concerto_view(request, id):
-    concerto = Concerto.objects.all()
+     concerto = Concerto.objects.get(id=id)
 
     context = {'concerto': concerto}
 
